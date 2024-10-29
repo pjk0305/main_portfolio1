@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0; list-style: none;}
+body,html{height: 100%;}
+.title_ment {height: 100px; text-align: center;font-family: "Gowun Dodum", sans-serif; opacity: 0;transition: all 1s;transform: translate(0, 50px);}
+.title_ment.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+
+.title_ment h1 span{color:#00cd3d; font-size: 45px;}
+
+/* 메인페이지 */
+#main{width: 100%;height: 100%;}
+.main_icon{position: absolute; top: 45%;left: 50%; transform:translate(-50%, -50%); cursor: pointer;}
+.rogo{margin: 20px; cursor: pointer;}
+#main>h1{ position: absolute; top: 80%; left: 48%; font-family: "Fredoka" , sans-serif; display: block; color: #00cd3d;}
+.wave{position: absolute; width: 1000px;height: 1000px;left: 21.5%;top: -3%;transform: translate(-50%, - 50%);}
+.wave:before, .wave:after{position: absolute;content: ''; border: 5px solid #00cd3d;opacity: 1; border-radius: 50%; left: 50%;top: 50%; transform: translate(-50%, - 50%); animation: wave 2s cubic-bezier(0, 0.2, 0.6, 1) infinite;}
+.wave::after{animation-delay: -0.9s;}
+
+@keyframes wave {
+    0%{
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+/* 차트 */
+#chart{width: 100%;height: 100%; background-color: #fff; position: relative;}
+#chart .title_ment{position: absolute; top: 35%;left: 20%;}
+#chart_img{width: 600px;height: 800px;  background: url('../img/chart_img.png'); background-size: cover; position: absolute; left: 40%; top: 15%; animation: vibrate 1.5s infinite;}
+
+@keyframes vibrate {
+    0% { transform: translate(0) rotate(-13deg); }
+    50% { transform: translate(0) rotate(-3deg); }
+    100% { transform: translate(0) rotate(-13deg); }
+}
+
+/* 앨범 */
+#album{width: 100%;height: 150%; position: relative;}
+#album .title_ment{position: absolute; top: 30%; left: 40%;}
+#album_img{width: 500px;height: 500px; background: url('../img/album.png'); background-size: cover; position: absolute; top: 40%; left: 25%;}
+.album_lp{width: 500px;height: 500px;background: url('../img/album_lp.png') no-repeat center center; background-size: cover; position: absolute; top: 40%; left: 40%;transition: transform 0.1s;}
+
+
+/* 새로운탐색 */
+#new_info{width: 100%;height: 150%; position: relative;}
+#new_info .title_ment{position: absolute; top: 35%; left: 20%;}
+#new_info_img{width: 800px;height: 800px;background: url('../img/new_info_img.png'); background-size: cover; position: absolute; top: 20%;left: 40%;}
+#refresh_btn{position: absolute;width: 85px;height: 30px; top: 223px;left: 467px; cursor: pointer; animation: btn-effect 1s step-end infinite; background-color: transparent; border-radius: 80px; border: 1px solid #00cd3d;}
+.refresh{position: absolute; width: 300px;height: 200px; top: 260px; left: 250px; background: url('./img/refresh1.png') no-repeat center center; background-size: cover; transition: bg ;}
+@keyframes btn-effect {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* 아티스트 */
+#artist{width: 100%;height: 150%; position: relative;}
+#artist .title_ment{position: absolute; top: 15%; left: 40%;}
+.artist_img{opacity: 0;transition: all 1s;transform: translate(0, 50px);}
+.artist_img.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+#artist_img{background: url('../img/artist_img.png'); position: absolute; left: 30%; top: 25%; width: 800px;height: 800px; background-size: cover;}
+#artist_img1{background: url('../img/artist_img1.png');position: absolute; left: 25%; top: 23%; width: 450px;height: 450px; background-size: cover;}
+#artist_img2{background: url('../img/artist_img2.png');position: absolute; left: 49%; top: 26%; width: 500px;height: 500px; background-size: cover;}
+#artist_img3{background: url('../img/artist_img3.png');position: absolute; left: 30%; top: 37%; width: 400px;height: 400px; background-size: cover;}
+#artist_img4{background: url('../img/artist_img4.png');position: absolute; left: 49%; top: 43%; width: 500px;height: 500px; background-size: cover;}
+
+/* 멜론DJ */
+#DJ{width: 100%;height: 150%; background-color: #fff; position: relative; overflow: hidden;}
+#DJ .title_ment{position: absolute; top: 15%; left: 37.5%;}
+.dj_wrap { display: flex; overflow: hidden; position: absolute; top: 500px;}
+.dj_wrap .rolling-list ul {display: flex;}
+.dj_wrap .rolling-list ul li { width: 300px; height: 380px; box-sizing: border-box; border-radius: 20px; margin: 0 5px; display: block; align-items: center; flex-shrink: 0;text-align: center; font-family: "Gowun Batang", serif; text-shadow: 2px 4px 4px rgba(0,0,0, 0.3);}
+.rolling-list:hover{animation: none;}
+.dj_wrap .rolling-list ul li img{margin-top: 20px; border-radius: 15px; box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.4);}
+.dj_wrap .rolling-list ul li h1{font-size: 20px;padding: 10px;}
+.dj_wrap .rolling-list ul li p span{color: orange;}
+.dj_wrap .rolling-list ul li:nth-child(even){margin-top: 80px;}
+.rolling-list.original {animation: rollingleft1 33s linear infinite;}
+.rolling-list.clone {animation: rollingleft2 33s linear infinite;}
+@keyframes rollingleft1 {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(-100%); }
+	50.01% { transform: translateX(100%); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes rollingleft2 {
+	0% { transition: translateX(0); }
+	100% { transform: translateX(-200%); }
+}
+
+
+
+
+/* footer */
+#footer{width: 100%; height: 500px;position: relative;}
+#footer .title_ment{position: absolute; top: 100px; left: 38%;}
+#footer_1{width: 100%;height: 150px; background-color: gray; position: relative;}
+#footer_1 img{position: absolute; top: 50px;left: 50px;}
+#footer_1 h1{font-size: 20px; position: absolute; top: 55px; left: 350px; color: #fff; font-weight: 400;}

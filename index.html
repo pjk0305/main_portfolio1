@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melon</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div id="main">
+        <a href="https://www.melon.com/index.htm">
+            <img class="rogo" src="img/icon.png" alt="">
+        </a>
+        <img class="main_icon" id="mainIcon" src="img/icon1.png" alt=""> 
+        <div class="wave"></div>
+    </div>
+    <div id="chart">
+        <div class="title_ment">
+            <h1>요즘 핫한 노래가 궁금하다면 <br> <span>멜론차트</span>에서 트랜드를 본다!</h1>
+        </div>
+        <div id="chart_img"></div> 
+    </div>
+    <div id="album">
+        <div class="title_ment">
+            <h1>내가 즐겨 듣는 테마와 유사곡 추천을 한번에 받고<br><span>최신앨범</span>까지 들어보자!</h1>
+        </div>
+        <div class="album_lp"></div>
+        <div id="album_img"></div>
+    </div>
+    <div id="new_info">
+        <div class="title_ment">
+            <h1>평소 듣던 노래 위주로 추천해드려요!<br><span>새로운 탐색</span></h1>
+        </div>
+        <div id="new_info_img">
+            <button id="refresh_btn"></button>
+            <div class="refresh" id="refresh"></div>
+        </div>
+    </div>
+    <div id="artist">
+        <div class="title_ment">
+            <h1>멜론에서만 들을 수 있는<br><span>아티스트의 음악방송!!</span></h1>
+        </div>
+        <div id="artist_img"></div>
+        <div id="artist_img1" class="artist_img"></div>
+        <div id="artist_img2" class="artist_img"></div>
+        <div id="artist_img3" class="artist_img"></div>
+        <div id="artist_img4" class="artist_img"></div>
+    </div>
+    <div id="DJ">
+        <div class="title_ment">
+            <h1>오늘은 뭘 듣지? 고민중이시라면<br><span>멜론DJ</span>의 추천곡은 어떠신가요?</h1>
+        </div>
+        <div class="dj_wrap">
+            <dis class="rolling-list">
+                <ul>
+                    <li>
+                        <img src="./img/dj1.jpg" alt="">
+                        <h1>텐션업! 오피셜 싱글차트</h1>
+                        <p><span>DJ</span> Melon_핫트렌드</p>
+                    </li>
+                    <li>
+                        <img src="./img/dj2.jpg" alt="">
+                        <h1>웃어서 행복한 거야, 하루를 시작할때 POP</h1>
+                        <p><span>DJ</span> 마끌리_</p>
+                    </li>
+                    <li>
+                        <img src="./img/dj3.jpg" alt="">
+                        <h1>숨겨진 보석, 남자 아이돌 솔로</h1>
+                        <p><span>DJ</span> 대중가요마스터</p>
+                    </li>
+                    <li>
+                        <img src="./img/dj4.jpg" alt="">
+                        <h1>태연어게인</h1>
+                        <p><span>DJ</span> oktoptree</p>
+                    </li>
+                    <li>
+                        <img src="./img/dj5.jpg" alt="">
+                        <h1>안 들으면 평생 후회하는 발라드</h1>
+                        <p><span>DJ</span> SmilyDaily | BH</p>
+                    </li>
+                    <li>
+                        <img src="./img/dj6.jpg" alt="">
+                        <h1>기분전환이 필요할 때 듣는 J-POP</h1>
+                        <p><span>DJ</span> 건빵뮤직</p>
+                    </li>
+                    <li>
+                        <img src="./img/dj7.jpg" alt="">
+                        <h1>오래오래 듣고 싶은 짙은 가을 감성 발라드</h1>
+                        <p><span>DJ</span> foreven.</p>
+                    </li>
+                    <li>
+                        <img src="./img/dj8.jpg" alt="">
+                        <h1>밴드의 시대가 돌아왔다! 현재 가장 핫한 인디 록밴드</h1>
+                        <p><span>DJ</span> Chanceshin404</p>
+                    </li>
+                    <li>
+                        <img src="./img/dj9.jpg" alt="">
+                        <h1>발라드: 10's Hits</h1>
+                        <p><span>DJ</span> 대중가요마스터</p>
+                    </li>
+                    <li>
+                        <img src="./img/dj10.jpg" alt="">
+                        <h1>모를 수가 없는 90년대~00년대 명곡 플리</h1>
+                        <p><span>DJ</span> Charlie.B</p>
+                    </li>
+                </ul>
+            </dis>
+        </div>
+
+        
+    </div>
+    <div id="footer">
+        <div class="title_ment">
+            <h1>새로워진 <span>Melon 6.0</span> 을 당장<br> 만나보세요!</h1>
+        </div>
+    </div>
+    <div id="footer_1">
+        <img class="footer_icon" src="img/icon.png" alt="">
+        <h1>회사소개 | 이용약관 | 개인정보처리방침 | 청소년 보호정책 | 제휴 프로모션 문의 | 이메일주소무단수집거부 | 파트너센터</h1>
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+</html>
