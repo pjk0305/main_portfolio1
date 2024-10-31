@@ -9,7 +9,7 @@ body,html{height: 100%;}
 
 /* 메인페이지 */
 #main{width: 100%;height: 100%;}
-.main_icon{position: absolute; top: 45%;left: 50%; transform:translate(-50%, -50%); cursor: pointer;}
+.main_icon{position: absolute; top: 46.9%;left: 49.6%; transform:translate(-50%, -50%); cursor: pointer;}
 .rogo{margin: 20px; cursor: pointer;}
 #main>h1{ position: absolute; top: 80%; left: 48%; font-family: "Fredoka" , sans-serif; display: block; color: #00cd3d;}
 .wave{position: absolute; width: 1000px;height: 1000px;left: 21.5%;top: -3%;transform: translate(-50%, - 50%);}
@@ -74,7 +74,7 @@ body,html{height: 100%;}
 #artist_img4{background: url('../img/artist_img4.png');position: absolute; left: 49%; top: 43%; width: 500px;height: 500px; background-size: cover;}
 
 /* 멜론DJ */
-#DJ{width: 100%;height: 150%; background-color: #fff; position: relative; overflow: hidden;}
+#DJ{width: 100%;height: 130%; background-color: #fff; position: relative; overflow: hidden;}
 #DJ .title_ment{position: absolute; top: 15%; left: 37.5%;}
 .dj_wrap { display: flex; overflow: hidden; position: absolute; top: 500px;}
 .dj_wrap .rolling-list ul {display: flex;}
@@ -105,5 +105,6 @@ body,html{height: 100%;}
 #footer{width: 100%; height: 500px;position: relative;}
 #footer .title_ment{position: absolute; top: 100px; left: 38%;}
 #footer_1{width: 100%;height: 150px; background-color: gray; position: relative;}
-#footer_1 img{position: absolute; top: 50px;left: 50px;}
-#footer_1 h1{font-size: 20px; position: absolute; top: 55px; left: 350px; color: #fff; font-weight: 400;}
+.footer_icon{position: absolute; top: 55px;left: 50px;}
+#footer_1 h1{font-size: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-weight: 400;}
+.sns_icon{float: right; margin: 55px 20px; }
